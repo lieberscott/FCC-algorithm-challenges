@@ -18,8 +18,8 @@ The resulting array must contain only unique values (no duplicates).
 
 
 function sym(args) {
-  let argsCopy = [];
-  let x;
+  let argsCopy = []; // copy the arguments (since we don't know how many arrays will be passed in
+  let x; // each argument without duplicates
   let argsCopy0; // this will hold the first arguments array (index 0) without duplicates
   for (let i = 0; i < arguments.length; i++) {
     x = arguments[i].filter((elem, ind) => {
